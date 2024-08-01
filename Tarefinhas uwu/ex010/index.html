@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/carrojo.ico.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+            
+                <!--Obs:É bom colocar 50px a mais nas fotos pa evitar a barra de rolagem lateral-->
+
+                
+        <!--<picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+                    
+            <img src="imagens/foto-g.png" alt="imagem flexível">
+        </picture>-->
+        
+        <!--Cod acima apenas desabilitado, em breve eu ligo dnv-->
+                    
+        <!--Sources não podem ser invertidos, sempre acima da imagem base consecutivamente.-->
+
+    <p>Testes aleatórios poq eu quero e poq eu póço</p>
+
+    <picture>
+        <source media="(max-width: 650px)" srcset="gato/gato-300x300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="gato/gato-600.jpg" type="image/jpg">
+        <img src="gato/gato-1000.jpg" alt="gato">
+    <h1>Aldo da foto</h1>
+    </picture>
+    <audio preload="metadata"controls loop
+    src="midia/audiokapa.mpeg" controls autoplay>
+    </audio>
+    
+    <p>Podcast do guanabaras (apenas testes)</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+                <!--Evita usar /wav é mt pesado-->
+    </audio>        
+    <p>Case n reproduza nenhum áudio <a href="midia/audiokapa.mpeg" type="audio/mpeg">Clique aqui e baxe va</a></p>
+    
+
+</body>
+</html>
