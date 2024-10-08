@@ -50,6 +50,10 @@ a:hover{
     text-decoration: underline;
 }
 
+a::before{
+    color: white;
+}
+
 a:visited{
     color: white;
 }
