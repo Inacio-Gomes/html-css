@@ -15,6 +15,17 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            padding: 8px;
+            background-color:rgb(211, 211, 211);
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;    /*deixar zebradinho (2n pula 2 e por aí vai)*/
+        }
+
         td, th{
             border: 1px solid black;
             padding: 8px;
@@ -38,6 +49,7 @@
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -47,6 +59,7 @@
     -->
     <table>
         <thead>
+            <caption>População das Unidades Federativas</caption>
             <tr>
                 <th>Estado</th>
                 <th>População</th>
