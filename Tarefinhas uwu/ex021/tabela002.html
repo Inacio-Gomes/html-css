@@ -13,6 +13,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
@@ -20,6 +21,12 @@
             font-weight: bold;
             padding: 8px;
             background-color:rgb(211, 211, 211);
+        }
+
+        thead > tr > th{                    /*OBS:não funfou no ÓperaGX*/
+            position: sticky;
+            top: 0;
+            background-color: rgba(211, 211, 211, 0.615) ;
         }
 
         tbody > tr:nth-child(2n){
