@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>quero mim mata</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iest">Estado:</label>
             <select name="est" id="iest">
@@ -28,7 +28,17 @@
         </p>
         <p>
             <label for="iprof">Profissão:</label>
-            <input type="text" name="prof" id="iprof">
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Escolha">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="PROF">Professor</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="CONT">Contabilista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="20" rows="3"></textarea>
         </p>
 
         <p>
