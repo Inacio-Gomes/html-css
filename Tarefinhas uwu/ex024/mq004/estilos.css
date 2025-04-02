@@ -2,11 +2,6 @@
 
 /*Versão mobile first*/
 
-@media screen {
-    
-}
-
-
 *{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -51,4 +46,3 @@ img#tablet{ display: none;}
 img#print{display: none;}
 img#pc{display: none;}
 img#tv{display: none;}
-}
