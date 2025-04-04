@@ -11,10 +11,13 @@ TV: acima de 1200px*/
 
 
 
-@media screen and (min-width:992px) and (max-width: 1200px){ /*Desktop*/ 
 
-}
-
-@media screen and (min-width: 1200px){
+@media screen and (min-width:768px){
+    .material-symbols-outlined{
+        display: none;
+    }
     
+    menu{
+        display: block;
+    }
 }
